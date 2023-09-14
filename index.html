@@ -4,27 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Everything new about scala since scala3 and upcoming scala4">
-  <link re="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-  <!-- link rel="stylesheet" href="css/style.css" -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>iheartscala.com</title>
 </head>
-<body>
-<div class="text-white container m-auto grid grid-cols-12 gap-1">
-  <header class="col-span-12 bg-slate-600 p-4">
-    <h1>iheartscala.com: What's new in Scala3 and upcoming Scala releases</h1>
+<body class="container">
+  <header>
+    <h1>iheartscala.com: Scala News</h1>
+    <p>What's new in Scala 3 and upcoming Scala 4</p>
   </header>
-  <aside class="lefty col-span-3 bg-slate-600 p-4">
-    <h2><a href="/">iheartscala.com</a></h2>
-    <ul>
-      <li><a href="/">Home</a></li>
-    </ul>
-  </aside>
-  <main class="middle col-span-6 bg-slate-600 p-4">
+<main class="middle">
     <section>
       <h2>Recent Articles</h2>
       <p>Here's what's new in Scala</p>
       <article>
-        <h3>scala-cli will become the new scala command</h3>
+        <h3>scala-cli: the new scala command</h3>
         <p>Here's some cool things that scala-cli offers:</p>
         <ul>
           <li>Can write your code as a script, no main, no @main, no nothing!</li>
@@ -32,29 +26,22 @@
         </ul>
       </article>
       <article>
-        <h3>Stop Coding in old style!  scalac can automatically change your code</h3>
+        <h3>Stop Coding in old style!</h3>
+        <p>  scalac can automatically change your code</p>
         <p>It seems that chatgpt, many templates (I'm talking to you sbt/g8), frameworks (I'm talking to you Play!) are stuck in scala 2.13
          You can fix your source code (and chatgpt's suggestions with this:</p>
         <pre><code>scalac -new-syntax  -rewrite myfile.scala
- scalac -indent  -rewrite myfile.scala
+scalac -indent  -rewrite myfile.scala
         </code></pre>
-        <p>The documentation is not too clear on this; I've found, like the docs, I had to use 2 steps, and it's not clear why of if there is another way</p>
+        <p>The documentation is not too clear on this, it implies 2 steps; 
+          I had to use the 2-liner, and it's not clear why of if there is another way</p>
       </article>
     </section>
   </main>
-  <aside class="righty col-span-3 bg-slate-600 p-4">
-    <h2>Tags</h2>
-    <ul>
-      <li>scala 3</li>
-      <li>scala-cli</li>
-      <li>sqlite</li>
-    </ul>
-  </aside>
-  <footer class="col-span-12 bg-slate-600 p-4">
+  <footer>
     <p>©2023 iheartscala.com.  <a href="https://github.com/iheartscala/website">Visit us on Github</a> and give us a * &nbsp;&nbsp; :) Thanks!</p>
   </footer>
 
-  <!-- script src="js/script.js"></script -->
-</div>  
+  <script src="js/script.js"></script>
 </body>
 </html>
