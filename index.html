@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Everything new about scala since scala3 and upcoming scala4">
+  <!-- link rel="stylesheet" href="css/style.css" -->
+  <title>iheartscala.com</title>
+</head>
+<body>
+  <header>
+    <h1>iheartscala.com: What's new in Scala3 and upcoming Scala releases</h1>
+  </header>
+  <aside class="lefty">
+    <h2><a href="/">iheartscala.com</a></h2>
+    <ul>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </aside>
+  <main class="middle">
+    <section>
+      <h2>Recent Articles</h2>
+      <p>Here's what's new in Scala</p>
+      <article>
+        <h3>scala-cli will become the new scala command</h3>
+        <p>Here's some cool things that scala-cli offers:</p>
+        <ul>
+          <li>Can write your code as a script, no main, no @main, no nothing!</li>
+          <li>Totally remove the need for sbt!  (dependencies are in comments at beginning of file)</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Stop Coding in old style!  scalac can automatically change your code</h3>
+        <p>It seems that chatgpt, many templates (I'm talking to you sbt/g8), frameworks (I'm talking to you Play!) are stuck in scala 2.13
+         You can fix your source code (and chatgpt's suggestions with this:</p>
+        <pre><code>scalac -new-syntax  -rewrite myfile.scala
+ scalac -indent  -rewrite myfile.scala
+        </code></pre>
+        <p>The documentation is not too clear on this; I've found, like the docs, I had to use 2 steps, and it's not clear why of if there is another way</p>
+      </article>
+    </section>
+  </main>
+  <aside class="righty">
+    <h2>Tags</h2>
+    <ul>
+      <li>scala 3</li>
+      <li>scala-cli</li>
+      <li>sqlite</li>
+    </ul>
+  </aside>
+  <footer>
+    <p>©2023 iheartscala.com.  <a href="https://github.com/iheartscala/website">Visit us on Github</a> and give us a * &nbsp;&nbsp; :) Thanks!</p>
+  </footer>
+
+  <!-- script src="js/script.js"></script -->
+</body>
+</html>
