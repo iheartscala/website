@@ -1,4 +1,4 @@
-const port = 8080;
+const port = 80;
 
 const handler = (request: Request): Response => {
   const body = `Your user-agent is:\n\n${
