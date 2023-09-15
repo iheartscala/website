@@ -1,2 +1,12 @@
-import * as mod from "https://deno.land/std@0.201.0/http/file_server.ts";
-console.log("Hi there, I'm the app.ts file needed for deno.  I'm probably deploying now :)")
+const port = 8080;
+
+const handler = (request: Request): Response => {
+  const body = `Your user-agent is:\n\n${
+    request.headers.get("user-agent") ?? "Unknown"
+  }`;
+
+  return new Response(body, { status: 200 });
+};
+
+console.log(`HTTP server running. Access it at: http://localhost:8080/`);
+Deno.serve({ port }, handler);
